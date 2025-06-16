@@ -1,14 +1,8 @@
 import React, { useState } from 'react';
 import RoleCard from './RoleCard';
 
-const roles = [
-  'Affiliate Marketer', 'Amazon Marketer', 'Brand Marketer', 'CRM Marketer',
-  'CX Director', 'Content Creator', 'Content Marketers', 'Growth Marketer',
-  'SEO Marketer', 'Social Media Manager', 'PR Director'
-];
-
-const RoleSelector = () => {
-  const [selectedRole, setSelectedRole] = useState('Brand Marketer');
+const Selector = ({roles ,value}) => {
+  const [selectedRole, setSelectedRole] = useState(value);
 
   return (
     <div className="roles-grid">
@@ -24,4 +18,4 @@ const RoleSelector = () => {
   );
 };
 
-export default RoleSelector;
+export default Selector;

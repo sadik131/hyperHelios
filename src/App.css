@@ -84,13 +84,15 @@
   color: #111;
 }
 
-.continue-btn {
+a .continue-btn{
   background: blue;
   color: white;
   border: none;
+  text-decoration: none;
   padding: 12px 30px;
   border-radius: 8px;
   font-size: 16px;
+  display: inline-block;
   margin-right: 10px;
   cursor: pointer;
 }
